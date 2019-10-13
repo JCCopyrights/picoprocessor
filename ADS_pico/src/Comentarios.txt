@@ -1,0 +1,5 @@
+Se ha mejorado el secuenciador de
+instrucciones, que ahora incluye 
+siete estados, y que es mucho más 
+lógico. Todas las instrucciones 
+parecen funcionar correctamente.

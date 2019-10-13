@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/johnc/Documents/Proyectos/ADS_pico/src/memory.vhd,1392822838,vhdl,C:/Users/johnc/Documents/Proyectos/ADS_pico/src/system.vhd,,,cfg_memory_xilinx_synth_block_ram;memory,,,,,,,,
+C:/Users/johnc/Documents/Proyectos/ADS_pico/src/picoCPU.vhd,1550423288,vhdl,,,,picocpu,,,,,,,,
+C:/Users/johnc/Documents/Proyectos/ADS_pico/src/pico_types.vhd,1109602720,vhdl,C:/Users/johnc/Documents/Proyectos/ADS_pico/src/picoCPU.vhd,,,pico_types,,,,,,,,
+C:/Users/johnc/Documents/Proyectos/ADS_pico/src/system.vhd,1393584448,vhdl,,,,system,,,,,,,,
+C:/Users/johnc/Documents/Proyectos/ADS_pico/src/system_tb.vhd,1550099977,vhdl,,,,system_tb,,,,,,,,

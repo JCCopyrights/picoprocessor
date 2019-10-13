@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Yago/Documents/Xilinx/picoProcessor_v1/system_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="pico_types" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="system" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/system/clk" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="label">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/datamin" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datamin[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datamin[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/datamout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datamout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datamout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/r_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r_w</obj_property>
+      <obj_property name="ObjectShortName">r_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/men" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">men</obj_property>
+      <obj_property name="ObjectShortName">men</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/menn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">menn</obj_property>
+      <obj_property name="ObjectShortName">menn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/irdecod" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">irdecod</obj_property>
+      <obj_property name="ObjectShortName">irdecod</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/aluop" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">aluop</obj_property>
+      <obj_property name="ObjectShortName">aluop</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/areg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">areg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">areg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/breg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">breg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">breg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/streg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">streg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">streg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/inreg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inreg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inreg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/pcreg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pcreg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">pcreg[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system/CPU/adreg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adreg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adreg[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

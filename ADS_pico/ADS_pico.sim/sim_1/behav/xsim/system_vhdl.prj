@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../src/pico_types.vhd" \
+"../../../../src/memory.vhd" \
+"../../../../src/picoCPU.vhd" \
+"../../../../src/system.vhd" \
+
+# Do not sort compile order
+nosort

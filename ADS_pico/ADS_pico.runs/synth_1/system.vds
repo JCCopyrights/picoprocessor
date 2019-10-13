@@ -1,0 +1,366 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 17 17:54:17 2019
+# Process ID: 12800
+# Current directory: C:/Users/johnc/Documents/Proyectos/ADS_pico/ADS_pico.runs/synth_1
+# Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: C:/Users/johnc/Documents/Proyectos/ADS_pico/ADS_pico.runs/synth_1/system.vds
+# Journal file: C:/Users/johnc/Documents/Proyectos/ADS_pico/ADS_pico.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system.tcl -notrace
+Command: synth_design -top system -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8704 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 361.355 ; gain = 100.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/system.vhd:20]
+INFO: [Synth 8-3491] module 'picoCPU' declared at 'C:/Users/johnc/Documents/Proyectos/ADS_pico/src/picoCPU.vhd:9' bound to instance 'CPU' of component 'picoCPU' [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/system.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'picoCPU' [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/picoCPU.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'picoCPU' (1#1) [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/picoCPU.vhd:20]
+	Parameter gAddressWidth bound to: 12 - type: integer 
+	Parameter gDataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Memory' declared at 'C:/Users/johnc/Documents/Proyectos/ADS_pico/src/memory.vhd:50' bound to instance 'Mem' of component 'Memory' [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/system.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/memory.vhd:81]
+	Parameter gAddressWidth bound to: 12 - type: integer 
+	Parameter gDataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Memory' (2#1) [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/memory.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'system' (3#1) [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/system.vhd:20]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 424.215 ; gain = 163.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 424.215 ; gain = 163.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 424.215 ; gain = 163.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/johnc/Documents/Proyectos/ADS_pico/src/picoCPU.vhd:186]
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'picoCPU'
+INFO: [Synth 8-5546] ROM "IxRegOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AddRegOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ird" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "R_WAux" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemAcc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "AEn" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "AluOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "AEn" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "BEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCRel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AdEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AdEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IxEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IxEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NewState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NewState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NewState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_fetch |                              000 |                              000
+                 s_decod |                              001 |                              001
+                s_getlsb |                              010 |                              011
+                s_getmsb |                              011 |                              010
+                  s_rdwr |                              100 |                              101
+                 s_execi |                              101 |                              100
+                 s_pcinc |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'picoCPU'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 424.215 ; gain = 163.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 7     
+	   7 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  23 Input      5 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	  16 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module picoCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 7     
+	   7 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  23 Input      5 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	  16 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 14    
+Module Memory 
+Detailed RTL Component Info : 
++---RAMs : 
+	              32K Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "CPU/ird" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives        | 
++------------+-------------+-----------+----------------------+-------------------+
+|system      | Mem/RAM_reg | Implied   | 4 K x 8              | RAM256X1S x 128   | 
++------------+-------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives        | 
++------------+-------------+-----------+----------------------+-------------------+
+|system      | Mem/RAM_reg | Implied   | 4 K x 8              | RAM256X1S x 128   | 
++------------+-------------+-----------+----------------------+-------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |     9|
+|3     |LUT1      |    10|
+|4     |LUT2      |    38|
+|5     |LUT3      |    25|
+|6     |LUT4      |    19|
+|7     |LUT5      |    46|
+|8     |LUT6      |   161|
+|9     |RAM256X1S |   128|
+|10    |FDCE      |    66|
+|11    |IBUF      |     2|
+|12    |IOBUF     |     8|
+|13    |OBUF      |    14|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   527|
+|2     |  CPU    |picoCPU |   334|
+|3     |  Mem    |Memory  |   168|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 567.273 ; gain = 306.348
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 663.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 136 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 663.543 ; gain = 411.008
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 663.543 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/johnc/Documents/Proyectos/ADS_pico/ADS_pico.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 17 17:54:43 2019...
